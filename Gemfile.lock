@@ -17,29 +17,39 @@ GIT
 GEM
   remote: http://rubygems.org/
   specs:
-    chunky_png (1.2.5)
+    chunky_png (1.3.11)
     compass (0.11.7)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
-    fssm (0.2.9)
-    haml (4.0.7)
+    ffi (1.13.1)
+    fssm (0.2.10)
+    haml (5.1.2)
+      temple (>= 0.8.0)
       tilt
     highline (1.6.8)
     hpricot (0.8.3)
     mustache (0.11.2)
-    rack (1.6.4)
+    rack (2.2.3)
     rake (10.4.2)
+    rb-fsevent (0.10.4)
+    rb-inotify (0.10.1)
+      ffi (~> 1.0)
     rdiscount (1.6.5)
     ronn (0.7.3)
       hpricot (>= 0.8.2)
       mustache (>= 0.7.0)
       rdiscount (>= 1.5.8)
-    sass (3.1.19)
+    sass (3.7.4)
+      sass-listen (~> 4.0.0)
+    sass-listen (4.0.0)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
     spox-plist (3.0.1)
     spox-textpow (0.10.3)
       spox-plist
-    tilt (2.0.1)
+    temple (0.8.2)
+    tilt (2.0.10)
 
 PLATFORMS
   ruby
@@ -50,8 +60,8 @@ DEPENDENCIES
   rake
   ronn
   sass
-  staticmatic (~> 0.11.0.alpha)!
+  staticmatic (~> 0.11.0.0)!
   ultraviolet!
 
 BUNDLED WITH
-   1.10.6
+   1.17.3
